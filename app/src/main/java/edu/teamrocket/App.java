@@ -1,17 +1,9 @@
-package edu.poniperro.galleygrub;
+package edu.teamrocket;
 
-import edu.poniperro.galleygrub.extras.CheeseExtra;
-import edu.poniperro.galleygrub.extras.Extra;
-import edu.poniperro.galleygrub.extras.Regular;
-import edu.poniperro.galleygrub.extras.SauceExtra;
-import edu.poniperro.galleygrub.extras.SizeLargeExtra;
-import edu.poniperro.galleygrub.items.Item;
-import edu.poniperro.galleygrub.items.RetailPrice;
-import edu.poniperro.galleygrub.items.Product;
-import edu.poniperro.galleygrub.order.Comanda;
-import edu.poniperro.galleygrub.order.Order;
-import edu.poniperro.galleygrub.receipt.Receipt;
-import edu.poniperro.galleygrub.receipt.Ticket;
+import edu.teamrocket.extras.*;
+import edu.teamrocket.items.*;
+import edu.teamrocket.order.*;
+import edu.teamrocket.receipt.*;
 
 /**
  * 
