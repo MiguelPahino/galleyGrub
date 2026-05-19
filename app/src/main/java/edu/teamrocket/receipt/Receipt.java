@@ -1,6 +1,9 @@
 package edu.teamrocket.receipt;
 
 import java.util.Optional;
+import edu.teamrocket.order.Comanda;
+import edu.teamrocket.extras.Extra;
+
 
 public class Receipt implements Ticket {
     private Double total = 0d;
@@ -20,7 +23,7 @@ public class Receipt implements Ticket {
     }
 
     public Extra getExtra(){
-
+        return this.extra.get();
     }
 
 }
