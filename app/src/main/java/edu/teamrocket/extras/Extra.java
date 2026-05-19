@@ -1,6 +1,7 @@
 package edu.teamrocket.extras;
 
 import java.util.Optional;
+import edu.teamrocket.order.Comanda;
 
 public abstract class Extra {
     static final String CHEESE = new String();
@@ -16,7 +17,7 @@ public abstract class Extra {
         this.nextExtra = Optional.of(nextExtra);
     }
 
-    public abstract void sumExtras(Comanda comanda){}
+    public abstract void sumExtras(Comanda comanda);
 
     
 }    
