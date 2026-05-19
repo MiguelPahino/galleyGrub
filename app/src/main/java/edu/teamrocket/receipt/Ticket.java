@@ -1,6 +1,7 @@
 package edu.teamrocket.receipt;
 
 import edu.teamrocket.extras.Extra;
+import edu.teamrocket.order.Comanda;
 
 public interface Ticket {
 
