@@ -3,25 +3,26 @@ package edu.teamrocket.order;
 import java.util.ArrayList;
 import java.util.List;
 import edu.teamrocket.items.Item;
+import edu.teamrocket.items.ItemFactory;
 
 public class Order implements Comanda{
     private Double total = 0d;
     private List<Item> itemsList = new ArrayList<>();
 
-    public Order(){};
+    public Order(){}
 
     public void addItem(String name, double price){
-        itemsList.add(new Item(name, price));
+        itemsList.add(ItemFactory.getItem(name, price));
     }
 
     public void addItem(String name, double price,String extra){
-        itemsList.add(new Item(name, price,extra));
+        itemsList.add(ItemFactory.getItem(name, price, extra));
     }
 
     public List<Item> itemList(){
         return this.itemsList;
     }
-
+ 
     public int size(){
         return this.itemList().size();
     }
@@ -29,11 +30,13 @@ public class Order implements Comanda{
     public Double getTotal(){
         return this.total;
     }
+
     public void updateTotal(Double total){
-        this.total = total;
+        this.total += total;
     }
 
     public void display(){
+        System.out.print("\n\t --- ORDER --- \n");
         itemsList.stream().forEach(i-> i.display());
     }
     
