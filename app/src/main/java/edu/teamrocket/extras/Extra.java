@@ -4,11 +4,11 @@ import java.util.Optional;
 import edu.teamrocket.order.Comanda;
 
 public abstract class Extra {
-    static final String CHEESE = new String();
-    static final String SAUCE = new String();
-    static final String SIZE_LARGE =new String();
+    private static Double CHEESE = 0.25d;
+    private static Double SAUCE = 0.50d;
+    private static Double SIZE_PRICE = 0.50d;
 
-    String extraProduct = new String();
+
     Optional<Extra> nextExtra = Optional.empty();
 
     protected  Extra(){};
@@ -18,6 +18,20 @@ public abstract class Extra {
     }
 
     public abstract void sumExtras(Comanda comanda);
+
+    public static Double getCHEESE() {
+        return CHEESE;
+    }
+
+    public static Double getSAUCE() {
+        return SAUCE;
+    }
+
+    public static Double getSIZE_PRICE() {
+        return SIZE_PRICE;
+    }
+
+    
 
     
 }    

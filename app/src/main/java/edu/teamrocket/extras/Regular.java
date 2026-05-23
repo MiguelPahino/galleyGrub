@@ -18,6 +18,10 @@ public class Regular extends Extra {
         comanda.updateTotal(total.get());
     }
     
+    if (nextExtra.isPresent()){
+        nextExtra.get().sumExtras(comanda);
+    }
+     
     };
 
 }
