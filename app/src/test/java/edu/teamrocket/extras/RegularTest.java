@@ -1,11 +1,10 @@
-package edu.poniperro.galleygrub.extras;
+package edu.teamrocket.extras;
 
-import static org.junit.Assert.assertEquals;
+import edu.teamrocket.receipt.Receipt;
+import edu.teamrocket.order.Order;
 
-import org.junit.Test;
-
-import edu.poniperro.galleygrub.order.Order;
-import edu.poniperro.galleygrub.receipt.Receipt;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RegularTest {
 

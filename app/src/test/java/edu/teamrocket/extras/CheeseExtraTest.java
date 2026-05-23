@@ -1,21 +1,20 @@
-package edu.poniperro.galleygrub.extras;
+package edu.teamrocket.extras;
 
-import static org.junit.Assert.assertEquals;
+import edu.teamrocket.receipt.Receipt;
+import edu.teamrocket.order.Order;
 
-import org.junit.BeforeClass;
-import org.junit.Test;
-
-import edu.poniperro.galleygrub.order.Order;
-import edu.poniperro.galleygrub.receipt.Receipt;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CheeseExtraTest {
 
-    static Receipt receipt;
-    static Extra cheese;
-    static Order order;
+    Receipt receipt;
+    Extra cheese;
+    Order order;
 
-    @BeforeClass
-    public static void setup_receipt() {
+    @BeforeEach
+    public void setup_receipt() {
 
         order = new Order();
 

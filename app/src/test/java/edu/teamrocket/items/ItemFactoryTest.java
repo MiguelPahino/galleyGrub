@@ -1,13 +1,11 @@
-package edu.poniperro.galleygrub.items;
+package edu.teamrocket.items;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNotSame;
-import static org.junit.Assert.assertTrue;
-
-import org.junit.Before;
-import org.junit.Test;
-
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNotSame;
 
 /**
  * Implementar singleton
@@ -15,7 +13,7 @@ import org.junit.Test;
 
 public class ItemFactoryTest {
 
-    @Before
+    @BeforeEach
     public void setup_itemFactory() {
         ItemFactory.clear();
         assertEquals(0, ItemFactory.size());
