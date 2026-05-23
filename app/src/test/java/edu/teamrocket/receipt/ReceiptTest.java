@@ -1,18 +1,13 @@
-package edu.poniperro.galleygrub.receipt;
+package edu.teamrocket.receipt;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import edu.teamrocket.order.Order;
+import edu.teamrocket.extras.*;
+import edu.teamrocket.order.Comanda;
 
-import org.junit.Before;
-import org.junit.Test;
-
-import edu.poniperro.galleygrub.extras.CheeseExtra;
-import edu.poniperro.galleygrub.extras.Extra;
-import edu.poniperro.galleygrub.extras.Regular;
-import edu.poniperro.galleygrub.extras.SauceExtra;
-import edu.poniperro.galleygrub.extras.SizeLargeExtra;
-import edu.poniperro.galleygrub.order.Comanda;
-import edu.poniperro.galleygrub.order.Order;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class ReceiptTest {
 
@@ -20,7 +15,7 @@ public class ReceiptTest {
     Order order;
     Extra cheese;
     
-    @Before
+    @BeforeEach
     public void setup_receipt() {
 
         order = new Order();
