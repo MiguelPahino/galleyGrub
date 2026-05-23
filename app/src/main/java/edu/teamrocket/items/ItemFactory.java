@@ -13,8 +13,8 @@ public class ItemFactory {
     }
 
     public static Item getItem(String name,double price,String extra){
-        itemMap.putIfAbsent(name + "w/" + extra,new Item(name, price,extra));
-        return itemMap.get(name + "w/" + extra);
+        itemMap.putIfAbsent(name + " w/ " + extra, new Item(name, price, extra));
+        return itemMap.get(name + " w/ " + extra);
     }
 
     static int size(){
