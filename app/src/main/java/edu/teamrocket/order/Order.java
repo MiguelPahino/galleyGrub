@@ -35,9 +35,13 @@ public class Order implements Comanda{
         this.total += total;
     }
 
-    public void display(){
+    public void display() {
         System.out.print("\n\t --- ORDER --- \n");
-        itemsList.stream().forEach(i-> i.display());
+        itemList().stream().forEach(this::itemDisplay);
+    }
+
+    private void itemDisplay(Item item) {
+        System.out.print("\t" + item.toString() + "\n");
     }
     
 }
